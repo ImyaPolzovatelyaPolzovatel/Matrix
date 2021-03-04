@@ -1,2 +1,3 @@
-Running the program:
-dinoPRO -c <file name> -f <fragment number> -n <operation number>
+Running the program:                                             #
+dinoPRO -c <file name> -f <fragment number> -n <operation number>#
+##################################################################
