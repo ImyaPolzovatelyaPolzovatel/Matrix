@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-//Ссправка 
+//Информация
 void printhelp(){
     printf("Cправка\n\n"); 
     printf("Рабочий вызов: \n");
