@@ -13,7 +13,12 @@ int GAN (char* lol, PMATRIX don){
 fclose(F);
 return 0;
 }
-
+/*!
+	\brief Функция PLUS вычисляет сумму всех чисел выбранной части матрицы
+	\param[in] PMATRIX don, int part – входящие параметры, указывающие на нужную часть матрицы
+	\param[out] float S – исходящий параметр, обозначающий итоговый результат 
+	\param int j1, j2, I, J – параметры, используемые для чтения нужных значений матрицы
+*/
 float PLUS(PMATRIX don, int part){
     float S=0;
     int j1, j2;
@@ -44,7 +49,12 @@ float PLUS(PMATRIX don, int part){
     }
     return S;
 }
-
+/*!
+	\brief Функция MIN – вывод минимального числа из выбранной части матрицы
+	\param[in] PMATRIX don, int part – входящие параметры, указывающие на нужную часть матрицы
+	\param[out] float S – исходящий параметр, обозначающий итоговый результат 
+	\param int j1, j2, I, J – параметры, используемые для чтения нужных значений матрицы
+*/
 float MIN(PMATRIX don, int part){
        float S=0;
     int j1, j2;
@@ -77,7 +87,12 @@ float MIN(PMATRIX don, int part){
     }
     return S;
 }
-
+/*!
+	\brief Функция MAX – вывод максимального числа из выбранной части матрицы
+	\param[in] PMATRIX don, int part – входящие параметры, указывающие на нужную часть матрицы
+	\param[out] float S – исходящий параметр, обозначающий итоговый результат 
+	\param int j1, j2, I, J – параметры, используемые для чтения нужных значений матрицы
+*/
 float MAX(PMATRIX don, int part){
            float S=0;
     int j1, j2;
