@@ -23,11 +23,6 @@ install:
 before_script:
   - source version.sh
 
-script:
-  - source .travis/${TRAVIS_OS_NAME}/building.sh
-  - source .travis/${TRAVIS_OS_NAME}/testing.sh
-  - source .travis/${TRAVIS_OS_NAME}/viewer.sh
-
 jobs:
     include:
       - stage: "Building"
