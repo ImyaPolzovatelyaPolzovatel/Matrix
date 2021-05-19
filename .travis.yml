@@ -13,6 +13,3 @@ stages:
 
 env:
   - BUILD_TYPE=release
-              
-install:
-  - source .travis/${TRAVIS_OS_NAME}/install.sh
