@@ -1,7 +1,7 @@
 #include "matrixfact.h"
 #include <stdio.h>
 int GAN (char* lol, PMATRIX don){
-    FILE* F=fopen(lol,"r");
+    FILE* F=fopen(input.txt,"r");
     if (F==NULL) return 1;
     int i,j;
     float t;
