@@ -4,7 +4,7 @@ compiler:
 matrix:
   include:
     - stage: test
-      script: - locammte test.txt
+      script: - locate tfgfghfggfgfxvcrrg56.txt
 env:
 branches:
   only:
