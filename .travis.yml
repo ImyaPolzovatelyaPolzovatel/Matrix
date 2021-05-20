@@ -6,3 +6,6 @@ matrix:
     - stage: test
       script: - locammte test.txt
 env:
+branches:
+  only:
+    - master
