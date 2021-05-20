@@ -7,5 +7,6 @@ script:
   - gcc -fPIC -c matrixfact.c -o matrixfact.o
   - gcc -shared matrixfact.o -o libmatrixfact.so
   - gcc -I"/home/user/testgithub/Matrix" -L"/home/user/testgithub/Matrix" dinoPRO.c -lmatrixfact -o dinoPRO
+branches:
   only:
     - master
