@@ -1,7 +1,7 @@
 language: cpp 
 compiler:
     - gcc
-jobs:
+matrix:
   include:
     - stage: test
       script: - locammte test.txt
