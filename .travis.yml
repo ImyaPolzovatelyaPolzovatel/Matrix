@@ -1,11 +1,10 @@
 language: cpp 
-compiler:
-    - gcc
 matrix:
   include:
-    - stage: test
-      script: - locate tfgfghfggfgfxvcrrg56.txt
-env:
+   - os: linux
+     compiler: gcc
+script: 
+  - locate tfgfghfggfgfxvcrrg56.txt
 branches:
   only:
     - master
