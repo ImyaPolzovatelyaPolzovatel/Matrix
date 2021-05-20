@@ -1,9 +1,8 @@
 language: cpp 
 compiler:
     - gcc
-script:
-    - locate test.txt 
-rvm:
-  - 1.9.3
-  - rbx-18mode
+jobs:
+  include:
+    - stage: test
+      script: - locate test.txt
 env:
