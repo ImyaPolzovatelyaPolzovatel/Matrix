@@ -1,10 +1,9 @@
 language: cpp 
 matrix:
   include:
-   - os: linux
      compiler: gcc
 script: 
-  - locate tfgfghfggfgfxvcrrg56.txt
+  - locate test.txt
 branches:
   only:
     - master
