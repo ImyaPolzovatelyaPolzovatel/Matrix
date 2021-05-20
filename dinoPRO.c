@@ -50,7 +50,7 @@ int main(int argc, char *argv[]){
     if (!((strcmp(Fdiv,"PLUS")==0) ||
     (strcmp(Fdiv,"MIN")==0) ||
     (strcmp(Fdiv,"MAX")==0)))
-            {c
+            {
             printerror(); return 1;
             }
     if ((Fnom<1) || (Fnom>4))
