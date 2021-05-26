@@ -1,6 +1,6 @@
 language: cpp 
 matrix:
-		include:
+	include:
 		compiler: gcc
 before_install:
   - sudo apt-get install -y doxygen
@@ -9,4 +9,4 @@ script:
 
 branches:
   only:
-	- master
+    - master
