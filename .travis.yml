@@ -1,7 +1,7 @@
 language: cpp 
 matrix:
-	include:
-		compiler: gcc
+  include:
+    compiler: gcc
 before_install:
   - sudo apt-get install -y doxygen
 script:
