@@ -1,11 +1,12 @@
 language: cpp 
 matrix:
-  include:
-     compiler: gcc
-script: 
-  - gcc -fPIC -c matrixfact.c -o matrixfact.o
-  - gcc -shared matrixfact.o -o libmatrixfact.so
-  - gcc -I`pwd` -L`pwd` dinoPRO.c -lmatrixfact -o dinoPRO
+	include:
+		compiler: gcc
+before_install:
+  - sudo apt-get install -y doxygen
+script:
+  - doxygen -g
+
 branches:
   only:
-    - master
+	- master
