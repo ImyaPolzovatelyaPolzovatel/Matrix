@@ -4,18 +4,14 @@ matrix:
     compiler: gcc
 before_install:
   - sudo apt-get install -y doxygen
-install:
-  - git checkout master
-  - chmod +x ./autobuild/push-apk.sh
-after_success:
-  - ./autobuild/push-apk.sh
 script:
   - doxygen -g
   - git config --global user.name "ImyaPolzovatelyaPolzovatel"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
   - git commit -am "Update doc from Travis CI"
-  - git push -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git remote add origin-master -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git push origin-master
 branches:
   only:
     - master
