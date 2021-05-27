@@ -6,6 +6,7 @@ before_install:
   - sudo apt-get install -y doxygen
 script:
   - doxygen -g
+  - git add -A
   - git commit -am "Update doc from Travis CI"
   - git push -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
 branches:
