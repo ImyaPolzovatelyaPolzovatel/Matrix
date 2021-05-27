@@ -10,9 +10,9 @@ script:
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
   - git commit -am "Update doc from Travis CI"
-  - git clone github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - cd Doxygen.git
-  - git push -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git push -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
 branches:
   only:
     - master
