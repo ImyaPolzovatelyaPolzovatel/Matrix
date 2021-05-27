@@ -13,7 +13,7 @@ script:
   - git add -A
   - git commit -am "Update doc from Travis CI"
   - git config --global push.default simple
-  - git push -f -q https://ImyaPolzovatelyaPolzovatel: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@github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git push -f -q https://ImyaPolzovatelyaPolzovatel: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@github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
 branches:
   only:
     - master
