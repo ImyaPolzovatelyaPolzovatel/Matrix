@@ -5,13 +5,13 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
+  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - cd Doxygen
   - doxygen -g
   - git config --global user.name "ImyaPolzovatelyaPolzovatel"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
   - git commit -am "Update doc from Travis CI"
-  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - cd Doxygen.git
   - git push -f -q https://ImyaPolzovatelyaPolzovatel:$GITHUB_API_KEY@github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
 branches:
   only:
