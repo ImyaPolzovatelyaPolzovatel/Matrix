@@ -9,8 +9,8 @@ script:
   - mv matrixfact.c Doxygen
   - cd Doxygen 
   - ls
-  - doxygen -g matrixfact.c
-  - doxygen matrixfact.c
+  - doxygen -g INPUT=matrixfact.c
+  - doxygen 
   - rm matrixfact.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
