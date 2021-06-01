@@ -11,6 +11,7 @@ script:
   - cd Doxygen
   - ls
   - doxygen -g
+  - doxygen
   - rm dinoPRO.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
