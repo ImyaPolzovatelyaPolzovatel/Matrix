@@ -6,11 +6,10 @@ before_install:
   - sudo apt-get install -y doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - echo ls -l
-  - ls
-  - ls -l
+  - mv dinoPRO.c ../Doxygen
   - cd Doxygen
   - doxygen -g
+  - rm dinoPRO.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
