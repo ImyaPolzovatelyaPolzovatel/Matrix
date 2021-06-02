@@ -8,11 +8,12 @@ script:
   - rm dinoPRO.c
   - rm matrixfact.h
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - doxygen -g
-  - ls
-  - mv Doxyfile Doxygen
+  - mv matrixfact.c Doxygen
   - cd Doxygen
+  - doxygen -g
   - doxygen Doxyfile
+  - rm matrixfact.c
+  - ls
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
