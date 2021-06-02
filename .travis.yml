@@ -9,7 +9,7 @@ script:
   - ls
   - doxygen -g matrixfact.c
   - ls
-  - mv Doxyfile matrixfact.c.bak
+  - mv matrixfact.c.bak Doxygen
   - ls
   - cd Doxygen
   - doxygen matrixfact.c.bak
