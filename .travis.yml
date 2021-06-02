@@ -12,9 +12,9 @@ script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
   - doxygen -g
   - ls
-  - mv Doxyfile ../ImyaPolzovatelyaPolzovatel/Doxygen
+  - mv Doxyfile ../Doxygen
   - ls
-  - cd ../ImyaPolzovatelyaPolzovatel/Doxygen 
+  - cd ../Doxygen 
   - doxygen Doxyfile
   - ls
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
