@@ -5,9 +5,11 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
+  - mkdir Matrix
+  - mkdir Doxygen
+  - cd ../
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
   - cd ../
-  - mkdir Doxygen
   - ls
   - cd Matrix
   - doxygen -g
