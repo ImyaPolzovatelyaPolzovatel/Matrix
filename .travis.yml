@@ -12,7 +12,7 @@ script:
   - ls
   - mv Doxyfile Doxygen
   - cd Doxygen
-  - doxygen
+  - doxygen Doxyfile
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
