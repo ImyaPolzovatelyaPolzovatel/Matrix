@@ -8,7 +8,7 @@ script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - doxygen -g
   - ls
-  - mv matrixfact.c.bak Doxygen
+  - mv Doxyfile Doxygen
   - cd Doxygen
   - doxygen
   - git config --global user.name "travis"
