@@ -7,11 +7,14 @@ before_install:
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
+  - ls
   - cd Matrix
   - doxygen -g
   - mv Doxyfile ~/Doxygen
   - rm Doxyfile
+  - ls
   - cd ~/Doxygen 
+  - ls
   - doxygen Doxyfile
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
