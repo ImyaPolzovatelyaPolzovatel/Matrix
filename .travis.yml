@@ -5,6 +5,8 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
+  - rm dinoPRO.c
+  - rm matrixfact.h
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - doxygen -g
   - ls
