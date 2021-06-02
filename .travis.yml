@@ -3,22 +3,20 @@ matrix:
   include:
     compiler: gcc
 before_install:
-  - sudo apt-get install doxygen
+  - sudo apt-get install doxygen graphviz
+  - sudo make install
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
   - mv matrixfact.h Doxygen
   - mv dinoPRO.c Doxygen
   - cd Doxygen
-  - mkdir test
   - doxygen -g
-  - rename 's/matrixfact.c/matrixfact1.h/' matrixfact.c
-  - rename 's/.c/.h/' dinoPRO.c
   - doxygen
   - ls
-  - rm dinoPRO.h
+  - rm dinoPRO.c
   - rm matrixfact.h
-  - rm matrixfact1.h
+  - rm matrixfact.c
   - ls
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
