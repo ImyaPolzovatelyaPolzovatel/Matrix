@@ -9,9 +9,9 @@ script:
   - ls
   - doxygen -g matrixfact.c
   - ls
-  - mv Doxyfile ../Doxygen
+  - mv Doxyfile Doxygen
   - ls
-  - cd ../Doxygen
+  - cd Doxygen
   - doxygen Doxyfile
   - ls
   - https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
