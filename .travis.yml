@@ -8,7 +8,6 @@ script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen/
   - cd Doxygen
-  - doxygen
   - doxygen -g
   - rm matrixfact.c
   - git config --global user.name "travis"
