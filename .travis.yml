@@ -14,7 +14,7 @@ script:
 
   - rename 's/matrixfact.c/matrixfact1.h/' matrixfact.c
   - rename 's/.c/.h/' dinoPRO.c
-  - doxygen Doxyfile
+  - OUT_LANG='RUSSIAN' && rm -d -f -r ru && mkdir ru && cd ru && doxygen Doxyfile
   - ls
   - rm dinoPRO.h
   - rm matrixfact.h
