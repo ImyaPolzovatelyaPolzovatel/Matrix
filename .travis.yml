@@ -12,7 +12,7 @@ script:
   - mv matrixfact.h Doxygen
   - mv dinoPRO.c Doxygen
   - cd Doxygen
-  - doxygen -g
+
   - doxygen
   - ls
   - rm dinoPRO.c
