@@ -6,11 +6,11 @@ before_install:
   - sudo apt-get install doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - mv Doxyfile matrixfact.c Doxygen/
+  - mv matrixfact.c Doxygen/
   - cd Doxygen
   - doxygen
   - doxygen -g
-  - rm Doxyfile matrixfact.c
+  - rm matrixfact.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
