@@ -5,7 +5,6 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
-  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
   - cd ../
   - mkdir Doxygen
@@ -13,11 +12,12 @@ script:
   - cd Matrix
   - doxygen -g
   - mv Doxyfile ../Doxygen
-
+  - rm Doxyfile
   - ls
   - cd ../Doxygen 
   - ls
   - doxygen Doxyfile
+  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
