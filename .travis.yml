@@ -5,7 +5,7 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
-  - mkdir Doxygen
+  - https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - ls
   - doxygen -g matrixfact.c
   - ls
@@ -14,7 +14,6 @@ script:
   - cd Doxygen
   - doxygen matrixfact.c.bak
   - ls
-  - https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
