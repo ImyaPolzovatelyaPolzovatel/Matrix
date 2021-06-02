@@ -12,6 +12,10 @@ script:
   - cd Doxygen
   - mkdir test
   - doxygen -g
+  - sed -i '61s/OUTPUT_DIRECTORY       =/OUTPUT_DIRECTORY       = ./' Doxyfile
+  - sed -i '1607s/GENERATE_LATEX         = YES/GENERATE_LATEX         = NO/' Doxyfile
+  - sed -i '774s/INPUT                  =/INPUT                  = test/' Doxyfile
+  - sed -i '61s/OUTPUT_DIRECTORY       =/OUTPUT_DIRECTORY       = ./' Doxyfile
   - doxygen Doxyfile
   - rm matrixfact.c
   - ls
