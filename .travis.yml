@@ -7,6 +7,7 @@ before_install:
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv Doxyfile Doxygen
+  - cd Doxygen
   - doxygen
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
