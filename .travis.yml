@@ -6,9 +6,10 @@ before_install:
   - sudo apt-get install doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - mv Doxyfile Doxygen
+  - mv Doxyfile matrixfact.c Doxygen/
   - cd Doxygen
-  export OUT_LANG='RUSSIAN' && rm -d -f -r ru && mkdir ru && cd Doxygen && doxygen ../Doxyfile
+  - doxygen
+  - rm Doxyfile matrixfact.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
