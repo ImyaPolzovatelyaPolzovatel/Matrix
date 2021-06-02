@@ -8,9 +8,7 @@ script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
   - cd Doxygen 
-  - ls
-  - doxygen -g INPUT=matrixfact.c
-  - doxygen 
+  - export OUT_LANG='RUSSIAN' && rm -d -f -r ru && mkdir ru && cd ru && doxygen ../Doxyfile
   - rm matrixfact.c
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
