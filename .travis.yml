@@ -11,7 +11,7 @@ script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
   - cd Doxygen
-  - doxygen -g OUTPUT_DIRECTORY=matrixfact.c
+  - doxygen -g
   - doxygen Doxyfile
   - rm matrixfact.c
   - ls
