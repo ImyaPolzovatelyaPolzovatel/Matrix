@@ -8,13 +8,13 @@ script:
   - mkdir Matrix
   - mkdir Doxygen
   - ls
-  - cd Matrix
+  - cd Matrix/Matrix
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
   - doxygen -g
   - ls
-  - mv Doxyfile ../Doxygen
+  - mv Doxyfile ../Doxygen/Doxygen
   - ls
-  - cd ../Doxygen 
+  - cd ../Doxygen/Doxygen
   - doxygen Doxyfile
   - ls
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
