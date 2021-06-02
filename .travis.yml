@@ -9,10 +9,10 @@ script:
   - ls
   - doxygen -g matrixfact.c
   - ls
-  - mv Doxyfile Doxygen
+  - mv Doxyfile matrixfact.c.bak
   - ls
   - cd Doxygen
-  - doxygen Doxyfile
+  - doxygen matrixfact.c.bak
   - ls
   - https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git config --global user.name "travis"
