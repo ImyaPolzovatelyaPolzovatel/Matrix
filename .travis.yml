@@ -5,8 +5,6 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
-  - rm dinoPRO.c
-  - rm matrixfact.h
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
   - cd Doxygen
@@ -17,6 +15,9 @@ script:
   - sed -i '774s/INPUT                  =/INPUT                  = ./' Doxyfile
   - sed -i '805s/RECURSIVE              = NO/RECURSIVE              = YES/' Doxyfile
   - doxygen Doxyfile
+  - ls
+  - rm dinoPRO.c
+  - rm matrixfact.h
   - rm matrixfact.c
   - ls
   - git config --global user.name "travis"
