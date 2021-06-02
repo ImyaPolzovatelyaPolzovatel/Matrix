@@ -16,12 +16,12 @@ script:
   - sed -i '1607s/GENERATE_LATEX         = YES/GENERATE_LATEX         = NO/' Doxyfile
   - sed -i '774s/INPUT                  =/INPUT                  = ./' Doxyfile
   - sed -i '805s/RECURSIVE              = NO/RECURSIVE              = YES/' Doxyfile
-  - rename 's\.c/\.cpp/' *.c
+  - rename 's\.c/\.cpp/' matrixfact.c
   - doxygen Doxyfile
   - ls
   - rm dinoPRO.c
   - rm matrixfact.h
-  - rm matrixfact.c
+  - rm matrixfact.cpp
   - ls
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
