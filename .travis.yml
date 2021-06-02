@@ -7,8 +7,8 @@ before_install:
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
-  - mv matrixfact.c matrixfact.h
-  - mv matrixfact.c matrixfact.c
+  - mv matrixfact.h Doxygen
+  - mv matrixfact.c Doxygen
   - cd Doxygen
   - mkdir test
   - doxygen -g
