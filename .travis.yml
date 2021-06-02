@@ -1,6 +1,4 @@
 language: cpp 
-os: linux
-dist: xenial
 matrix:
   include:
     compiler: gcc
@@ -8,17 +6,8 @@ before_install:
   - sudo apt-get install doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
-  - mv matrixfact.c Doxygen
-  - mv matrixfact.h Doxygen
-  - mv dinoPRO.c Doxygen
-  - cd Doxygen
-
+  - mv Doxyfile Doxygen
   - doxygen
-  - ls
-  - rm dinoPRO.c
-  - rm matrixfact.h
-  - rm matrixfact.c
-  - ls
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
