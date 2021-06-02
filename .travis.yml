@@ -4,6 +4,7 @@ matrix:
     compiler: gcc
 before_install:
   - sudo apt-get install doxygen graphviz
+  - sudo pacman -S doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
