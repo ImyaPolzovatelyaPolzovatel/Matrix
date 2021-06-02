@@ -5,7 +5,7 @@ matrix:
 before_install:
   - sudo apt-get install -y doxygen
 script:
-  - https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - ls
   - doxygen -g matrixfact.c
   - ls
