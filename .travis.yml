@@ -7,10 +7,11 @@ before_install:
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
+  - mv matrixfact.c matrixfact.h
+  - mv matrixfact.c matrixfact.c
   - cd Doxygen
   - mkdir test
   - doxygen -g
-  - sed -i '2335s/DOT_PATH               =/DOT_PATH               = ../test' Doxyfile
   - sed -i '61s/OUTPUT_DIRECTORY       =/OUTPUT_DIRECTORY       = ./' Doxyfile
   - sed -i '1607s/GENERATE_LATEX         = YES/GENERATE_LATEX         = NO/' Doxyfile
   - sed -i '774s/INPUT                  =/INPUT                  = ./' Doxyfile
