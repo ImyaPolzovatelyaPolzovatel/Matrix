@@ -3,7 +3,7 @@ matrix:
   include:
     compiler: gcc
 before_install:
-  - sudo apt-get install -y doxygen
+  - sudo apt-get install doxygen
 script:
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - mv matrixfact.c Doxygen
@@ -11,10 +11,10 @@ script:
   - mv dinoPRO.c Doxygen
   - cd Doxygen
   - mkdir test
-
+  - doxygen -g
   - rename 's/matrixfact.c/matrixfact1.h/' matrixfact.c
   - rename 's/.c/.h/' dinoPRO.c
-  - export doxygen Doxyfile
+  - doxygen
   - ls
   - rm dinoPRO.h
   - rm matrixfact.h
