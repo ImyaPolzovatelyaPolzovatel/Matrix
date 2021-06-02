@@ -8,8 +8,11 @@ script:
   - mkdir Matrix
   - mkdir Doxygen
   - ls
-  - cd Matrix/Matrix
+  - cd Doxygen
+  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
+  - cd ../Matrix
   - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Matrix.git
+  - cd Matrix
   - doxygen -g
   - ls
   - mv Doxyfile ../Doxygen/Doxygen
@@ -17,7 +20,6 @@ script:
   - cd ../Doxygen/Doxygen
   - doxygen Doxyfile
   - ls
-  - git clone https://github.com/ImyaPolzovatelyaPolzovatel/Doxygen.git
   - git config --global user.name "travis"
   - git config --global user.email "2019103620@pnu.edu.ru"
   - git add -A
