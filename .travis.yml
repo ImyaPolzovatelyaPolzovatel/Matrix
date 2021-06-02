@@ -16,7 +16,7 @@ script:
   - sed -i '1607s/GENERATE_LATEX         = YES/GENERATE_LATEX         = NO/' Doxyfile
   - sed -i '774s/INPUT                  =/INPUT                  = ./' Doxyfile
   - sed -i '805s/RECURSIVE              = NO/RECURSIVE              = YES/' Doxyfile
-  - rename 's\.c/\.cpp/' matrixfact.c
+  - rename 's/.c/.cpp/' *.c
   - doxygen Doxyfile
   - ls
   - rm dinoPRO.c
