@@ -1,24 +1,18 @@
 language: cpp 
-rvm:
-  - 8
-  - 7
+os: linux
+compiler: gcc
 env:
   - typeBuild=Building
   - typeBuild=Documentation
 jobs:
   include:
-  - rvm: 8
     env: typeBuild=Building    
-    os: linux
-    compiler: gcc
     script: 
       - gcc -fPIC -c matrixfact.c -o matrixfact.o
       - gcc -shared matrixfact.o -o libmatrixfact.so
       - gcc -I`pwd` -L`pwd` dinoPRO.c -lmatrixfact -o dinoPRO
-  - rvm: 7 
+
     env: typeBuild=Documentation
-    os: linux
-    compiler: gcc
     before_install:
       - sudo apt-get install doxygen
     script:
