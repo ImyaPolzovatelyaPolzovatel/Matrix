@@ -5,7 +5,7 @@
 #include <stdlib.h>
 //Справка 
 void printhelp(){
-    printf("Cправка\n\n\n"); 
+    printf("Cправка\n\n\n") 
     printf("Рабочий вызов: \n");
     printf("dinoPRO -c <имя файла> -f <номер фрагмента> -n <номер операции> \n\n");
 	printf("Вызов справки: \n");
