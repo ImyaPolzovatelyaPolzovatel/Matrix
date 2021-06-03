@@ -1,7 +1,7 @@
 language: cpp 
 jobs:
-  -include:
-    -stage: Building
+  include:
+    - stage: "Building"
     
       name: "Building"
       os: linux
@@ -12,7 +12,7 @@ jobs:
         - gcc -I`pwd` -L`pwd` dinoPRO.c -lmatrixfact -o dinoPRO
         
         
-    -stage: Documentation 
+    - stage: Documentation 
     
       name: "Documentation"
       os: linux
