@@ -6,7 +6,7 @@ env:
   - typeBuild=Building
   - typeBuild=Documentation
 jobs:
-  exclude:
+  include:
   - rvm: 8
     env: typeBuild=Building    
     os: linux
