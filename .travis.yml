@@ -4,8 +4,7 @@ env:
   - typeBuild=Documentation
 jobs:
   exclude:
-      env: typeBuild=Building
-    
+      - env: typeBuild=Building    
       os: linux
       compiler: gcc
       script: 
@@ -13,8 +12,7 @@ jobs:
         - gcc -shared matrixfact.o -o libmatrixfact.so
         - gcc -I`pwd` -L`pwd` dinoPRO.c -lmatrixfact -o dinoPRO
         
-      env: typeBuild=Documentation
-
+      - env: typeBuild=Documentation
       os: linux
       compiler: gcc
       before_install:
