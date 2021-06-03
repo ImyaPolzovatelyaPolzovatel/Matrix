@@ -1,10 +1,10 @@
 language: cpp 
-typeBuild:
-  - Building
-  - Documentation
+env:
+  - typeBuild=Building
+  - typeBuild=Documentation
 jobs:
   include:
-    - typeBuild: Building
+      env: typeBuild: Building
     
       os: linux
       compiler: gcc
@@ -13,7 +13,7 @@ jobs:
         - gcc -shared matrixfact.o -o libmatrixfact.so
         - gcc -I`pwd` -L`pwd` dinoPRO.c -lmatrixfact -o dinoPRO
         
-   - typeBuild: Documentation
+      env: typeBuild: Documentation
 
       os: linux
       compiler: gcc
