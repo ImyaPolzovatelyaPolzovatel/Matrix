@@ -1,7 +1,6 @@
 language: cpp 
 stages:
-  - "Building"
-  - "Documentation"
+  - name Building Documentation
 jobs:
   include:
       - stage: "Building"
