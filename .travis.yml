@@ -11,6 +11,7 @@ jobs:
   -include:
     -stage:
       os: linux
+      compiler: gcc
       before_install:
         - sudo apt-get install doxygen
       script:
