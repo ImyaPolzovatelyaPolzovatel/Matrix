@@ -3,7 +3,7 @@ env:
   - typeBuild=Building
   - typeBuild=Documentation
 jobs:
-  include:
+  exclude:
       env: typeBuild=Building
     
       os: linux
